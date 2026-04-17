@@ -185,7 +185,9 @@
               <h3>Elevator Simulator</h3>
               <p>
                 In this project, I worked with my partner to develop an elevator simulator that services several different types
-                of elevators and schedulers for the elevators in a building with a given number of floors.
+                of elevators and schedulers for the elevators in a building with a given number of floors. The four different elevators
+                have different behaviors that they follow, and each scheduler works differently in assigning calls to elevators. Schedulers will
+                take in Calls that give a starting and ending floor.
 
               </p>
               <p>
@@ -203,22 +205,26 @@
               <p>
               Specifically, this project is best implemented through the use of Abstract
               classes and interfaces which allow us to group common functionality/attributes for a robust and abstracted design.
-              This ensures that we follow the SRP as each of our classes is doing only one thing, and having only one reason to
-              change, supports open closed principle as our classes are programmed to abstractions (method taking in IElevator),
-              since we took time to properly design parent/subclass structure, substituting parent class objects for subclass objects
-              wont break our program. For dependency inversion, we ensured that our high level scheduler relies on low level elevators.
-              Finally, our interfaces were created narrowly enough so that implementing classes did not have to implement necessary methods.
+                Both our Elevator and Scheduler classes were abstract so that they shared methods such as moveUp, moveDown, and assignCall.
+                Our design ensures that we follow the SRP as each of our classes is doing only one thing, and having only one reason to
+              change. The code supports open closed principle as our classes are programmed to abstractions (method taking in a type Elevator rather than creating it.),
+              Additionally, since we took time to properly design parent/subclass structure, substituting parent class objects for subclass objects
+              did not break our program. For dependency inversion, we ensured that our high level scheduler relies on low level elevators.
+              Finally, our interfaces were created narrowly enough so that implementing classes did not have to implement unnecessary methods.
               </p>
 
               <p>
                 In this project, I worked with a partner to write the program. I was responsible
                 for writing the code for two of the Elevators as well as the Simple Scheduler. I also worked to implement
                 the Call Class and Direction Enum. After working through
-                the code with my partner, we both went through the remainder of the project, collaborating on the code and debugging together.
+                the code with my partner, we both went through the remainder of the project, collaborating on the code, refactoring, and debugging together.
+                Each class was accompanied by a test file that was created through TDD.
               </p>
 
               <p>
-                This project was interesting to me because I had never gone through Test Driven Development before.
+                This project was interesting to me because I had never gone through Test Driven Development before. It
+                was a new experience for me that I now have a lot of knowledge in. Although at some times, TDD can be tedious,
+                it works in the long run especially getting a feel for how our code is supposed to work.
               </p>
 
 
