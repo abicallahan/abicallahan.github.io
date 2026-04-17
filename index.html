@@ -79,8 +79,6 @@
     </header>
 
 
-
-
     <div class="site-section cta-big-image border-bottom" id="about-section">
       <div class="container" style="padding-top: 30px">
         <div class="row">
@@ -106,7 +104,8 @@
                </p>
                <p>
                 In my free time, I enjoy being outside and watching sunsets as well as spending time with my friends and family. Back
-                home, I love to ski and hike in the mountains. In San Diego, I enjoy going to the beach and exploring the city. I also love to travel and have been to several countries in Europe.
+                home, I love to ski and hike in the mountains. In San Diego, I enjoy going to the beach and exploring the city. I also love to travel
+                 and have been to several countries in Europe when I got the opportunity to study abroad last semester.
                </p>
 
 
@@ -120,7 +119,6 @@
     </div>
 
 
-
     <section class="site-section border-bottom" id="projects-section">
       <div class="container">
         <div class="row mb-5 justify-content-center">
@@ -128,6 +126,8 @@
             <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">Projects</h2>
           </div>
         </div>
+
+
         <div class="row">
           <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
           
@@ -172,6 +172,66 @@
 
           </div>
         </div>
+
+        <!-- ELEVATORS -->
+        <div class="row">
+          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+
+            <img src="birthday_paradox.png" alt="Elevator Simulator" class="img-fluid">
+
+          </div>
+          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+            <div class="mb-4">
+              <h3>Elevator Simulator</h3>
+              <p>
+                In this project, I worked with my partner to develop an elevator simulator that services several different types
+                of elevators and schedulers for the elevators in a building with a given number of floors.
+
+              </p>
+              <p>
+                In this project, there are four different types of elevators: standard, freight, express, and penthouse.
+                The standard elevator visits all of the floors, and will accept a new call if the pick up and drop off floors of the call
+                are in the same direction that it's already traveling and would not cause it to change direction. It will also accept a new call
+                if it is waiting on the first floor. The freight elevator can visit all of the floors, but it will not change
+                direction to pick up a call, it only holds one person at a time, and it will change direction to answer a call if it is headed
+                to the ground floor. The express elevator only services the top half of the building and the ground floor. The penthouse elevator
+                only travels between the top and ground floor. The two schedulers that exist are the simple scheduelr and the complex
+                scheduler. The simple scheduler assigns calls from left to right, and the complex scheduler
+                assigns calls based on the elevator that can complete the call in the least amount of rounds.
+              </p>
+
+              <p>
+              Specifically, this project is best implemented through the use of Abstract
+              classes and interfaces which allow us to group common functionality/attributes for a robust and abstracted design.
+              This ensures that we follow the SRP as each of our classes is doing only one thing, and having only one reason to
+              change, supports open closed principle as our classes are programmed to abstractions (method taking in IElevator),
+              since we took time to properly design parent/subclass structure, substituting parent class objects for subclass objects
+              wont break our program. For dependency inversion, we ensured that our high level scheduler relies on low level elevators.
+              Finally, our interfaces were created narrowly enough so that implementing classes did not have to implement necessary methods.
+              </p>
+
+              <p>
+                In this project, I worked with a partner to write the program. I was responsible
+                for writing the code for two of the Elevators as well as the Simple Scheduler. I also worked to implement
+                the Call Class and Direction Enum. After working through
+                the code with my partner, we both went through the remainder of the project, collaborating on the code and debugging together.
+              </p>
+
+              <p>
+                This project was interesting to me because I had never gone through Test Driven Development before.
+              </p>
+
+
+            </div>
+
+
+
+          </div>
+        </div>
+
+
+
+
       </div>
       
 
@@ -188,9 +248,6 @@
         <div class="row mb-5 text-center">
 
 
-
-          
-          
           <div class="col-md-12 text-center">
             <p class="mb-0">
               <span class="icon-mail_outline d-block h4 text-primary"></span>
