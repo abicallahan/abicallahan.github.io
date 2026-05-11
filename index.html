@@ -235,6 +235,74 @@
           </div>
         </div>
 
+        <!-- LIFE -->
+        <div class="row">
+          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+
+            <img src="life-board.jpg" alt="Life Board Game" class="img-fluid">
+
+          </div>
+          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+            <div class="mb-4">
+              <h3>Game of Life</h3>
+              <p>
+                In this project, I worked with my group of three others to develop a game simulation inspired by the
+                Game of Life board game. The user travels around the board, earns money, and
+                reaches different milestones like school, marriage, and starting a family. The player navigates different
+                decisions from childhood to retirement. The game ends at retirement, with the player who made the most
+                money winning the game. We chose to build this project because we wanted to make it something that was creative,
+                could be played by anyone, and also allowed us to add our own twist to the typical game. It was a great way
+                for all of us to apply the skills we have learned in an overall project that is something we can show.
+
+              </p>
+              <p>
+                This project takes Life a bit deeper where we keep it to one player, but we add genetics,
+                insurance, finances, more risk, and more chance. As the player, they have the choice of career, location of house, etc.
+                The player and partner's DNA is randomly generated, while the child's DNA is combined from the two parents through normal inheritance.
+                Car and House Insurance are based on risk factors for Location, and there are three different Events: Milestone Events, Financial Events, and
+                Risky Events. The game still ends at retirement, with the player's full life statistics printed at the end.
+              </p>
+
+              <p>
+                We designed this game to be in the scope of 4 people, and use design patterns learned throughout the semester. For example,
+                our Event classes (the classes that help the character make a decision at different stages) use the Abstract Factory Design Pattern
+                as there aer EarlyLife Events or AdultLife Events. We decided to make our Person class Abstract while the Character/Player, Partner, and Child
+                all extended this class. Our added element of DNA and genetics is associated with the Person class, and our elements for Insurance are based
+                off of an Interface. We follow the SOLID principles and make use of the OOP Pillars throughout the entirety of the project.
+                We had decided to split the project into 4 parts: Person, DNA, Events, and Insurance to make sure that we equally contributed and
+                were able to practice Test Driven Development, Github Communication, and Teamwork.
+              </p>
+
+              <p>
+                In this project, I was responsible for the DNA portion. Because I have a minor in biology,
+                this was a great opportunity for me to combine my disciplines. I started with a basic ENUM for Allele, which
+                is a specific trait like eye color, hair color, etc. From there, I created an AllelePair class where this
+                had a copy of the maternal copy of the allele, and the paternal copy. The DNA class contains the bulk of the implementation
+                where I combine DNA sequences that the child inherits, where I generate random DNA sequences, and use the Phenotype class to show
+                exactly what traits the Person holds.
+              </p>
+
+              <p>
+                I enjoyed the creativity of the project because we got a lot of creative liberty in creating something that
+                is both fun but practical. For me specifically, my part was really enjoyable to implement because
+                I have gained a lot of knowledge about both computer science and biology that I got to show what I know. It was the second time
+                of us doing TDD, and it went a little smoother this time. Additionally, having continuous integration in our project was both helpful and
+                allowed me to learn more about the CI pipeline.
+              </p>
+
+              <p>
+                Feel free to take a look at our <a href="https://github.com/usd-comp-305/project-04-abigail-alex-coco-penny">repository</a> with the corresponding ReadMe!
+
+              </p>
+
+
+            </div>
+
+
+
+          </div>
+        </div>
+
 
 
 
